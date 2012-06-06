@@ -11,7 +11,7 @@
 # Sample Usage:
 #
 # [Remember: No empty lines between comments and class definition]
-class ntpd-service {
+class ntpd_service {
 	## package / service for ubuntu machines: openntpd / openntpd
 	case $operatingsystem {
 		redhat : {
