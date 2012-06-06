@@ -1,1 +1,1 @@
-include ntpd-service
+include ntpd_service
