@@ -13,12 +13,12 @@
 # [Remember: No empty lines between comments and class definition]
 class ntpd_service {
 	## package / service for ubuntu machines: openntpd / openntpd
-	case $operatingsystem {
-		redhat : {
+	case $::operatingsystem {
+		redhat, centos, oel : {
 			$ntp_pkg = 'ntpdate'
 			$ntp_srv = 'ntpd'
 		}
-		ubuntu : {
+		ubuntu, debian : {
 			$ntp_pkg = 'openntpd'
 			$ntp_srv = 'openntpd'
 		}
