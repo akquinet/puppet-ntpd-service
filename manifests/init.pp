@@ -22,6 +22,10 @@ class ntpd_service {
 			$ntp_pkg = 'openntpd'
 			$ntp_srv = 'openntpd'
 		}
+		opensuse, suse : {
+      $ntp_pkg = 'ntp'
+      $ntp_srv = 'ntp'
+    }
 	}
 	package {
 		"${ntp_pkg}" :
